@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Bangers';
+  src: url('/Bangers-Regular.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Bangers';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 135px;
+  line-height: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.game-square {
+  background-color: #bda762;
+  border: 1px solid #555;
+  color: black;
+  font-size: 100px;
+  height: 125px;
+  line-height: 125px;
+  text-align: center;
+  width: 125px;
+}
+
+.darker-game-square {
+  background-color: #877c5a;
+  border: 1px solid #555;
+  color: black;
+  font-size: 100px;
+  height: 125px;
+  line-height: 125px;
+  text-align: center;
+  width: 125px;
+}
+
+.corner-game-square {
+  background-color: #8e6b00;
+  border: 1px solid #555;
+  color: white;
+  font-size: 100px;
+  height: 125px;
+  line-height: 125px;
+  text-align: center;
+  width: 125px;
+}
+
+.empty-square {
+  background-color: #00b5b9;
+  height: 125px;
+  text-align: center;
+  width: 125px;
+}
+
+.end-header {
+  transform: rotate(180deg);
+  text-align: right;
+}

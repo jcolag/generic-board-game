@@ -1,4 +1,7 @@
 import React from 'react';
+import ReactDOM from 'react-dom'
+import { DndProvider } from 'react-dnd'
+import Backend from 'react-dnd-html5-backend'
 import { width, height } from './consts';
 
 export default class TicTacToeBoard extends React.Component {
@@ -63,9 +66,11 @@ export default class TicTacToeBoard extends React.Component {
     return (
       <div>
         <h1>Open Oubliette!</h1>
-        <table id="board">
-          <tbody>{tbody}</tbody>
-        </table>
+        <DndProvider backend={Backend}>
+          <table id="board">
+            <tbody>{tbody}</tbody>
+          </table>
+        </DndProvider>
         {winner}
         <h1 class="end-header">Open Oubliette!</h1>
       </div>
